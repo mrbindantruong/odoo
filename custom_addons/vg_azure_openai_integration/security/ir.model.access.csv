@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+vg_azure_openai_integration.access_chatgpt_model,access_chatgpt_model,vg_azure_openai_integration.model_chatgpt_model,base.group_user,1,1,1,1
+access_res_users_extension,res_users_extension,model_res_users,,1,1,1,1
