@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.res_config_settings_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//form" position="inside">
-                <app data-string="Chatgpt" string="ChatGPT" name="chatgpt" logo="vg_azure_openai_integration/static/description/icon.png">
+                <app data-string="Chatgpt" string="ChatGPT" name="chatgpt" logo="azure_openai_integration/static/description/icon.png">
                     <block title="ChatGPT">
                         <div class="col-xs-12 row o_settings_container o_chatgpt_chatgpt_container">
                             <div class="col-xs-12 col-md-6 o_setting_box">

@@ -16,5 +16,8 @@
     'installable': True,
     'application': False,
     'auto_install': False,
-    'category': 'OpenAI'    
+    'category': 'OpenAI',
+    'price': '200',
+    'currency': 'USD',
+    'images': ['static/description/banner.png']
 }

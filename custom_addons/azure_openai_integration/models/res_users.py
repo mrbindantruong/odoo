@@ -10,7 +10,7 @@ class ResUsers(models.Model):
     top_p = fields.Float(string="Top P", digits=(1,2), default=0.95)
     prompt_message = fields.Text(string="Prompt message", default="You are an AI assistant that helps people find information.")
     token_limit = fields.Integer(string="Token limit (monthly)",required=False, default=-1)
-    remain_token = fields.Integer(string="Remaining token", required=False, default=lambda self:self.env['ir.config_parameter'].get_param('vg_azure_openai_integration.token_limit', default=50000))
+    remain_token = fields.Integer(string="Remaining token", required=False, default=lambda self:self.env['ir.config_parameter'].get_param('azure_openai_integration.token_limit', default=50000))
     token_timestamp = fields.Date(required=False, default=datetime.now(timezone.utc))
 
     @api.onchange('past_message_included')

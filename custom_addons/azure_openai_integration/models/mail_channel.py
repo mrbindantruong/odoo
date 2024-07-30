@@ -9,8 +9,8 @@ class CommunicationChannel(models.Model):
         
     def _notify_thread(self, message, msg_vals=False, **kwargs):
         rdata = super(CommunicationChannel, self)._notify_thread(message, msg_vals=msg_vals, **kwargs)
-        partner_chatgpt = self.env.ref("vg_azure_openai_integration.partner_chatgpt")
-        user_chatgpt = self.env.ref("vg_azure_openai_integration.user_chatgpt")
+        partner_chatgpt = self.env.ref("azure_openai_integration.partner_chatgpt")
+        user_chatgpt = self.env.ref("azure_openai_integration.user_chatgpt")
         author_id = msg_vals.get('author_id')
         chatgpt_name = str(partner_chatgpt.name or '') + ', '
         prompt = msg_vals.get('body')
@@ -32,7 +32,7 @@ class CommunicationChannel(models.Model):
         remain_token = self.env.user.remain_token
         token_timestamp = self.env.user.token_timestamp
         current_timestamp = datetime.now(timezone.utc)
-        default_token_limit = int(ICP.get_param('vg_azure_openai_integration.token_limit', default=0))
+        default_token_limit = int(ICP.get_param('azure_openai_integration.token_limit', default=0))
         token_limit = default_token_limit if self.env.user.token_limit == -1 else self.env.user.token_limit
 
         #reset the remain token if needed
@@ -59,9 +59,9 @@ class CommunicationChannel(models.Model):
         if(remain_token < estimate_token):
             return "You've reached the token limit for this month. Your token limit will reset on the 1st of next month. Contact your administrator if you need additional tokens."
                 
-        api_key = ICP.get_param('vg_azure_openai_integration.openapi_api_key', default='')
-        endpoint = ICP.get_param('vg_azure_openai_integration.endpoint', default='')
-        gpt_model = ICP.get_param('vg_azure_openai_integration.chatgpt_model', default='')
+        api_key = ICP.get_param('azure_openai_integration.openapi_api_key', default='')
+        endpoint = ICP.get_param('azure_openai_integration.endpoint', default='')
+        gpt_model = ICP.get_param('azure_openai_integration.chatgpt_model', default='')
         tempreture = self.env.user.tempreture
         top_P = self.env.user.top_p                    
         
