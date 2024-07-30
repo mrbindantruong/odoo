@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_gpt_users_form_simple_modif_inherit" model="ir.ui.view">
+        <field name="name">res.users.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form_simple_modif"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="ChatGPT">
+                    <group>
+                        <field name="tempreture"/>
+                        <field name="past_message_included"/>
+                        <field name="top_p"/>
+                        <field name="prompt_message"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_gpt_users_form_inherit" model="ir.ui.view">
+            <field name="name">res.users.form</field>
+            <field name="model">res.users</field>
+            <field name="inherit_id" ref="base.view_users_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="ChatGPT">
+                        <group>                            
+                            <field name="token_limit" help="If the value is set to -1, the token limit will default to the ChatGPT system's setting. You can override this default setting for the user here."/>
+                            <field name="remain_token"/>                            
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+</odoo>
