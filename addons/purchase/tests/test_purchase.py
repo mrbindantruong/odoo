@@ -483,6 +483,49 @@ class TestPurchase(AccountTestInvoicingCommon):
 
         self.assertEqual(order_b.order_line.price_unit, 10.0, 'The price unit should be 10.0')
 
+    def test_discount_and_price_update_on_quantity_change(self):
+        """ Purchase order line price and discount should update accordingly based on quantity
+        """
+        product = self.env['product.product'].create({
+            'name': 'Product',
+            'standard_price': 12,
+            'seller_ids': [
+                Command.create({
+                    'partner_id': self.partner_a.id,
+                    'min_qty': 10,
+                    'price': 10,
+                    'discount': 10,
+                }),
+                Command.create({
+                    'partner_id': self.partner_a.id,
+                    'min_qty': 20,
+                    'price': 10,
+                    'discount': 15,
+                })
+            ]
+        })
+
+        purchase_order = self.env['purchase.order'].with_company(self.company_data['company']).create({
+            'partner_id': self.partner_a.id,
+            'order_line': [Command.create({
+                'product_id': product.id,
+                'product_uom': product.uom_po_id.id,
+            })],
+        })
+        po_line = purchase_order.order_line
+
+        po_line.product_qty = 10
+        self.assertEqual(po_line.discount, 10, "first seller should be selected so discount should be 10")
+        self.assertEqual(po_line.price_subtotal, 90, "0.1 discount applied price should be 90")
+
+        po_line.product_qty = 22
+        self.assertEqual(po_line.discount, 15, "second seller should be selected so discount should be 15")
+        self.assertEqual(po_line.price_subtotal, 187, "0.15 discount applied price should be 187")
+
+        po_line.product_qty = 2
+        self.assertEqual(po_line.discount, 0, "no seller should be selected so discount should be 0")
+        self.assertEqual(po_line.price_subtotal, 24, "No seller")
+
     def test_purchase_not_creating_useless_product_vendor(self):
         """ This test ensures that the product vendor is not created when the
         product is not set on the purchase order line.
@@ -756,3 +799,43 @@ class TestPurchase(AccountTestInvoicingCommon):
             {'product_id': product_no_branch_tax.id, 'taxes_id': (tax_a + tax_b).ids},
             {'product_id': product_no_tax.id, 'taxes_id': []},
         ])
+
+    def test_vendor_price_by_purchase_order_company(self):
+        """
+        Test that in case a vendor has multiple price for two company A and B,
+        and the purchase_order.company_id != env.company_id
+        the price of chosen is the one of the company specified in the purchase order
+        """
+        company_a = self.env.company
+        company_b = self.env['res.company'].create({'name': 'Saucisson Inc.'})
+        self.env.company = company_a
+
+        self.product_a.write({
+            'seller_ids': [
+                Command.create({
+                    'partner_id': self.partner_a,
+                    'product_code': 'A',
+                    'company_id': company_a.id,
+                    'price': 10.0,
+                }),
+                Command.create({
+                    'partner_id': self.partner_a,
+                    'product_code': 'B',
+                    'company_id': company_b.id,
+                    'price': 15.0,
+                }),
+            ]
+        })
+
+        po = self.env['purchase.order'].with_context(allowed_company_ids=[company_a.id, company_b.id]).with_company(company_b).create({
+            'partner_id': self.partner_a.id,
+            'company_id': company_b.id,
+            'order_line': [Command.create({
+                'name': self.product_a.name,
+                'product_id': self.product_a.id,
+            })],
+        })
+
+        self.assertEqual(po.amount_untaxed, 15.0)
+        po.company_id = company_a.id
+        self.assertEqual(po.amount_untaxed, 10.0)

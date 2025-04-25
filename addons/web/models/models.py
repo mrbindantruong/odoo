@@ -135,7 +135,9 @@ class Base(models.AbstractModel):
                 co_records = self[field_name]
 
                 if 'order' in field_spec and field_spec['order']:
-                    co_records = co_records.search([('id', 'in', co_records.ids)], order=field_spec['order'])
+                    co_records = co_records.with_context(active_test=False).search(
+                        [('id', 'in', co_records.ids)], order=field_spec['order'],
+                    ).with_context(co_records.env.context)  # Reapply previous context
                     order_key = {
                         co_record.id: index
                         for index, co_record in enumerate(co_records)
@@ -239,9 +241,10 @@ class Base(models.AbstractModel):
         if not groups:
             length = 0
         elif limit and len(groups) == limit:
+            annoted_groupby = self._read_group_get_annoted_groupby(groupby, lazy=lazy)
             length = limit + len(self._read_group(
                 domain,
-                groupby=groupby if not lazy else [groupby[0]],
+                groupby=annoted_groupby.values(),
                 offset=limit,
             ))
 

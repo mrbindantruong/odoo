@@ -202,6 +202,24 @@ class AccountMove(models.Model):
             </div>
         """) % (bootstrap_cls, title, content))
 
+    def _is_l10n_sa_eligibile_invoice(self):
+        self.ensure_one()
+        return self.is_invoice() and self.l10n_sa_confirmation_datetime and self.country_code == 'SA'
+
+    def _get_report_base_filename(self):
+        """
+            Generate the name of the invoice PDF file according to ZATCA business rules:
+            Seller Vat Number (BT-31), Date (BT-2), Time (KSA-25), Invoice Number (BT-1)
+        """
+        if self._is_l10n_sa_eligibile_invoice():
+            return self.with_context(l10n_sa_file_format=False).env['account.edi.xml.ubl_21.zatca']._export_invoice_filename(self)
+        return super()._get_report_base_filename()
+
+    def _get_invoice_report_filename(self, extension='pdf'):
+        if self._is_l10n_sa_eligibile_invoice():
+            return self.with_context(l10n_sa_file_format=extension).env['account.edi.xml.ubl_21.zatca']._export_invoice_filename(self)
+        return super()._get_invoice_report_filename(extension)
+
     def _l10n_sa_is_in_chain(self):
         """
         If the invoice was successfully posted and confirmed by the government, then this would return True.
@@ -210,9 +228,37 @@ class AccountMove(models.Model):
         zatca_doc_ids = self.edi_document_ids.filtered(lambda d: d.edi_format_id.code == 'sa_zatca')
         return len(zatca_doc_ids) > 0 and not any(zatca_doc_ids.filtered(lambda d: d.state == 'to_send'))
 
+    def _get_tax_lines_to_aggregate(self):
+        """
+        If the final invoice has downpayment lines, we skip the tax correction, as we need to recalculate tax amounts
+        without taking into account those lines
+        """
+        if self.country_code == 'SA' and not self._is_downpayment() and self.line_ids._get_downpayment_lines():
+            return self.env['account.move.line']
+        return super()._get_tax_lines_to_aggregate()
+
+    def _get_l10n_sa_totals(self):
+        self.ensure_one()
+        invoice_vals = self.env['account.edi.xml.ubl_21.zatca']._export_invoice_vals(self)
+        return {
+            'total_amount': invoice_vals['vals']['monetary_total_vals']['tax_inclusive_amount'],
+            'total_tax': invoice_vals['vals']['tax_total_vals'][-1]['tax_amount'],
+        }
+
 
 class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
+
+    def _apply_retention_tax_filter(self, tax_values):
+        return not tax_values['tax_id'].l10n_sa_is_retention
+
+    def _is_global_discount_line(self):
+        """
+            Any line that has a negative amount and is not linked to a down-payment is considered as a
+            global discount line. These can be created either manually, or through a promotions program.
+        """
+        self.ensure_one()
+        return not self._get_downpayment_lines() and self.price_subtotal < 0
 
     @api.depends('price_subtotal', 'price_total')
     def _compute_tax_amount(self):

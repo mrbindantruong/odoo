@@ -253,7 +253,7 @@ class MailActivityMixin(models.AbstractModel):
         """ Override unlink to delete records activities through (res_model, res_id). """
         record_ids = self.ids
         result = super(MailActivityMixin, self).unlink()
-        self.env['mail.activity'].sudo().search(
+        self.env['mail.activity'].with_context(active_test=False).sudo().search(
             [('res_model', '=', self._name), ('res_id', 'in', record_ids)]
         ).unlink()
         return result
@@ -289,7 +289,7 @@ class MailActivityMixin(models.AbstractModel):
             today_utc=pytz.utc.localize(datetime.utcnow()),
             tz=tz,
         )
-        alias = query.join(self._table, "id", sql_join, "res_id", "last_activity_state")
+        alias = query.left_join(self._table, "id", sql_join, "res_id", "last_activity_state")
 
         return SQL.identifier(alias, 'activity_state'), ['activity_state']
 

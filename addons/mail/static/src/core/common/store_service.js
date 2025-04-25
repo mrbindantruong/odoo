@@ -75,9 +75,6 @@ export class Store extends BaseStore {
     internalUserGroupId = null;
     imStatusTrackedPersonas = Record.many("Persona", {
         inverse: "storeAsTrackedImStatus",
-        onUpdate() {
-            this.updateImStatusRegistration();
-        },
     });
     hasLinkPreviewFeature = true;
     // messaging menu
@@ -189,6 +186,12 @@ export class Store extends BaseStore {
         if (ev.target.closest(".o_channel_redirect") && model && id) {
             ev.preventDefault();
             const thread = this.Thread.insert({ model, id });
+            if (!thread.is_pinned) {
+                this.env.services["mail.thread"].fetchChannel(id).then(() => {
+                    this.env.services["mail.thread"].open(thread);
+                });
+                return true;
+            }
             this.env.services["mail.thread"].open(thread);
             return true;
         } else if (ev.target.closest(".o_mail_redirect") && id) {
@@ -197,20 +200,20 @@ export class Store extends BaseStore {
             return true;
         } else if (ev.target.tagName === "A" && model && id) {
             ev.preventDefault();
-            Promise.resolve(this.env.services.action.doAction({
-                type: "ir.actions.act_window",
-                res_model: model,
-                views: [[false, "form"]],
-                res_id: id,
-            })).then(() => {
-                if (!this.env.isSmall) {
-                    this.env.services["mail.thread"].open(thread, true, { autofocus: false });
-                }
-            });
+            Promise.resolve(
+                this.env.services.action.doAction({
+                    type: "ir.actions.act_window",
+                    res_model: model,
+                    views: [[false, "form"]],
+                    res_id: id,
+                })
+            ).then(() => this.onLinkFollowed(thread));
             return true;
         }
         return false;
     }
+
+    onLinkFollowed(fromThread) {}
 
     setup() {
         super.setup();

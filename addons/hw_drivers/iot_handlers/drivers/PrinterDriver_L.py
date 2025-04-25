@@ -96,10 +96,7 @@ class PrinterDriver(Driver):
         if (
                 any(x in device['url'] for x in protocol)
                 and device['device-make-and-model'] != 'Unknown'
-                or (
-                'direct' in device['device-class']
-                and 'serial=' in device['url']
-        )
+                or 'direct' in device['device-class']
         ):
             model = cls.get_device_model(device)
             ppd_file = ''
@@ -172,15 +169,31 @@ class PrinterDriver(Driver):
         }
         event_manager.device_changed(self)
 
-    def print_raw(self, data):
-        process = subprocess.Popen(["lp", "-d", self.device_identifier], stdin=subprocess.PIPE)
+    def print_raw(self, data, landscape=False, duplex=True):
+        """
+        Print raw data to the printer
+        :param data: The data to print
+        :param landscape: Print in landscape mode (Default: False)
+        :param duplex: Print in duplex mode (recto-verso) (Default: True)
+        """
+        options = []
+        if landscape:
+            options.extend(['-o', 'orientation-requested=4'])
+        if not duplex:
+            options.extend(['-o', 'sides=one-sided'])
+        cmd = ["lp", "-d", self.device_identifier, *options]
+
+        _logger.debug("Printing using command: %s", cmd)
+        process = subprocess.Popen(cmd, stdin=subprocess.PIPE)
         process.communicate(data)
         if process.returncode != 0:
-            # The stderr isn't meaningful so we don't log it ('No such file or directory')
+            # The stderr isn't meaningful, so we don't log it ('No such file or directory')
             _logger.error('Printing failed: printer with the identifier "%s" could not be found',
                           self.device_identifier)
 
     def print_receipt(self, data):
+        _logger.debug("print_receipt called for printer %s", self.device_name)
+
         receipt = b64decode(data['receipt'])
         im = Image.open(io.BytesIO(receipt))
 
@@ -371,11 +384,14 @@ class PrinterDriver(Driver):
 
     def open_cashbox(self, data):
         """Sends a signal to the current printer to open the connected cashbox."""
+        _logger.debug("open_cashbox called for printer %s", self.device_name)
+
         commands = RECEIPT_PRINTER_COMMANDS[self.receipt_protocol]
         for drawer in commands['drawers']:
             self.print_raw(drawer)
 
     def _action_default(self, data):
+        _logger.debug("_action_default called for printer %s", self.device_name)
         self.print_raw(b64decode(data['document']))
 
 
