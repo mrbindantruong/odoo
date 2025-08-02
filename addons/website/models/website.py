@@ -8,13 +8,16 @@ import inspect
 import json
 import logging
 import re
+from itertools import zip_longest
+
 import requests
 import threading
 
+from datetime import datetime
 from lxml import etree, html
 from psycopg2 import sql
 from werkzeug import urls
-from werkzeug.datastructures import OrderedMultiDict
+from werkzeug.datastructures import MultiDict
 from werkzeug.exceptions import NotFound
 
 from odoo import api, fields, models, tools, http, release, registry
@@ -384,7 +387,9 @@ class Website(models.Model):
     @api.model
     def configurator_init(self):
         r = dict()
-        company = self.get_current_website().company_id
+        theme = self.env["ir.module.module"].search([("name", "=", "theme_default")])
+        current_website = self.get_current_website()
+        company = current_website.company_id
         configurator_features = self.env['website.configurator.feature'].search([])
         r['features'] = [{
             'id': feature.id,
@@ -398,6 +403,8 @@ class Website(models.Model):
         r['logo'] = False
         if not company.uses_default_logo:
             r['logo'] = company.logo.decode('utf-8')
+        if current_website.configurator_done:
+            r['redirect_url'] = theme.button_choose_theme()
         try:
             result = self._website_api_rpc('/api/website/1/configurator/industries', {'lang': self.env.context.get('lang')})
             r['industries'] = result['industries']
@@ -1222,7 +1229,7 @@ class Website(models.Model):
                 order = View._order
             views = View.with_context(active_test=False).search(domain, order=order)
             if views:
-                view = views.filter_duplicate()
+                view = views.filter_duplicate()[:1]
             else:
                 # we handle the raise below
                 view = self.env.ref(view_id, raise_if_not_found=False)
@@ -1320,8 +1327,12 @@ class Website(models.Model):
             record = {'loc': page['url'], 'id': page['id'], 'name': page['name']}
             if page.view_id and page.view_id.priority != 16:
                 record['priority'] = min(round(page.view_id.priority / 32.0, 1), 1)
-            if page['write_date']:
-                record['lastmod'] = page['write_date'].date()
+            last_updated_date = max(
+                [d for d in (page.write_date, page.view_id.write_date) if isinstance(d, datetime)],
+                default=None,
+            )
+            if last_updated_date:
+                record['lastmod'] = last_updated_date.date()
             yield record
 
         # ==== CONTROLLERS ====
@@ -1534,11 +1545,11 @@ class Website(models.Model):
     def _is_canonical_url(self, canonical_params):
         """Returns whether the current request URL is canonical."""
         self.ensure_one()
-        # Compare OrderedMultiDict because the order is important, there must be
-        # only one canonical and not params permutations.
-        params = request.httprequest.args
-        canonical_params = canonical_params or OrderedMultiDict()
-        if params != canonical_params:
+        params = request.httprequest.args.items(multi=True)
+        canonical = iter([]) if not canonical_params\
+            else canonical_params.items(multi=True) if isinstance(canonical_params, MultiDict)\
+            else canonical_params.items()
+        if any(a != b for a, b in zip_longest(params, canonical)):
             return False
         # Compare URL at the first routing iteration because it's the one with
         # the language in the path. It is important to also test the domain of

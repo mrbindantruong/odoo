@@ -16,18 +16,18 @@
 # Yihya Hugirat <hugirat@gmail.com>, 2023
 # Amit Spilman <amit@laylinetech.com>, 2023
 # Netta Waizer, 2023
-# Martin Trigaux, 2023
 # ZVI BLONDER <ZVIBLONDER@gmail.com>, 2023
 # yael terner, 2024
 # Ha Ketem <haketem@gmail.com>, 2024
 # Orel Nahmany, 2024
+# Martin Trigaux, 2025
 # or balmas, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-13 10:28+0000\n"
+"POT-Creation-Date: 2025-05-07 20:36+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: or balmas, 2025\n"
 "Language-Team: Hebrew (https://app.transifex.com/odoo/teams/41243/he/)\n"
@@ -180,6 +180,11 @@ msgid "Attachment Count"
 msgstr "כמות קבצים מצורפים"
 
 #. module: sms
+#: model:ir.model,name:sms.model_base
+msgid "Base"
+msgstr "בסיס"
+
+#. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__failure_type__sms_blacklist
 msgid "Blacklisted"
 msgstr "ברשימה השחורה"
@@ -216,12 +221,12 @@ msgstr "קניית נקודות זכות."
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_resend__can_cancel
 msgid "Can Cancel"
-msgstr ""
+msgstr "יכול לבטל"
 
 #. module: sms
 #: model:ir.model.fields,field_description:sms.field_sms_resend__can_resend
 msgid "Can Resend"
-msgstr ""
+msgstr "יכול לשלוח"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree
@@ -540,7 +545,7 @@ msgstr ""
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.mail_resend_message_view_form
 msgid "Ignore all"
-msgstr ""
+msgstr "התעלם מהכל"
 
 #. module: sms
 #: model:ir.model.fields.selection,name:sms.selection__sms_sms__state__outgoing
@@ -930,7 +935,7 @@ msgstr ""
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_template_view_form
 msgid "Reset Template"
-msgstr ""
+msgstr "אפס תבנית"
 
 #. module: sms
 #: model_terms:ir.ui.view,arch_db:sms.sms_sms_view_tree

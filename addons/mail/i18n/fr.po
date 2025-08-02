@@ -12,7 +12,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 10:33+0000\n"
+"POT-Creation-Date: 2025-07-11 01:02+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
 "Last-Translator: Manon Rondou, 2025\n"
 "Language-Team: French (https://app.transifex.com/odoo/teams/41243/fr/)\n"
@@ -10919,6 +10919,16 @@ msgstr "Vous pouvez ignorer ce message en toute sécurité"
 
 #. module: mail
 #. odoo-python
+#: code:addons/mail/models/mail_activity_type.py:0
+#, python-format
+msgid ""
+"You cannot delete %(activity_names)s as it is required in various apps."
+msgstr ""
+"Vous ne pouvez pas supprimer %(activity_names)s car il est requis dans "
+"diverses applications."
+
+#. module: mail
+#. odoo-python
 #: code:addons/mail/models/discuss/discuss_channel.py:0
 #, python-format
 msgid ""
@@ -10927,6 +10937,17 @@ msgid ""
 msgstr ""
 "Impossible de supprimer ces groupes, car le groupe \"Toute la société\" est "
 "nécessaire pour d'autres modules."
+
+#. module: mail
+#. odoo-python
+#: code:addons/mail/models/mail_activity_type.py:0
+#, python-format
+msgid ""
+"You cannot modify %(activities_names)s target model as they are are required"
+" in various apps."
+msgstr ""
+"Vous ne pouvez pas modifier le modèle cible de %(activities_names)s car ils "
+"sont requis dans diverses applications."
 
 #. module: mail
 #. odoo-python
@@ -11751,13 +11772,6 @@ msgstr "votre alias"
 #: model_terms:ir.ui.view,arch_db:mail.email_template_form
 msgid "{{ object.partner_id.lang }}"
 msgstr "{{ object.partner_id.lang }}"
-
-#. module: mail
-#. odoo-javascript
-#: code:addons/mail/static/src/core/common/autoresize_input.xml:0
-#, python-format
-msgid "{{ props.placeholder }}"
-msgstr "{{ props.placeholder }}"
 
 #. module: mail
 #. odoo-python

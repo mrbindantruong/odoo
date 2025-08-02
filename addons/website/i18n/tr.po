@@ -24,6 +24,7 @@
 # Buket Şeker <buket_skr@hotmail.com>, 2023
 # ismail eski <ismaileski@gmail.com>, 2023
 # Gökhan Erdoğdu <gokhan.erdogdu@mechsoft.com.tr>, 2023
+# İlknur Gözütok, 2023
 # Saban Yildiz <sabany@projetgrup.com>, 2023
 # Ayhan KIZILTAN <akiziltan76@hotmail.com>, 2023
 # Levent Karakaş <levent@mektup.at>, 2023
@@ -39,18 +40,18 @@
 # Ayhan Kızıltan, 2024
 # Murat Durmuş <muratd@projetgrup.com>, 2024
 # Martin Trigaux, 2024
-# İlknur Gözütok, 2024
 # Halil, 2024
 # Ediz Duman <neps1192@gmail.com>, 2024
 # Wil Odoo, 2025
+# Deniz Guvener_Odoo <degu@odoo.com>, 2025
 # 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-10 10:33+0000\n"
+"POT-Creation-Date: 2025-06-13 00:52+0000\n"
 "PO-Revision-Date: 2023-10-26 23:09+0000\n"
-"Last-Translator: Wil Odoo, 2025\n"
+"Last-Translator: Deniz Guvener_Odoo <degu@odoo.com>, 2025\n"
 "Language-Team: Turkish (https://app.transifex.com/odoo/teams/41243/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -150,7 +151,7 @@ msgstr "# Ziyaretler"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.navbar
 msgid "#{_navbar_name if _navbar_name else 'Main'}"
-msgstr ""
+msgstr "#{_navbar_name if _navbar_name else 'Main'}"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -269,12 +270,12 @@ msgstr "+ Yeni Websitesi"
 #: model_terms:ir.ui.view,arch_db:website.template_footer_descriptive
 #: model_terms:ir.ui.view,arch_db:website.template_footer_headline
 msgid "+1 555-555-5556"
-msgstr ""
+msgstr "+1 555-555-5556"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
 msgid "+1 555-555-5556\""
-msgstr ""
+msgstr "+1 555-555-5556\""
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
@@ -502,7 +503,7 @@ msgstr "404 Bulunamadı"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown
 msgid "45"
-msgstr ""
+msgstr "45"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_map_options
@@ -740,6 +741,8 @@ msgid ""
 "<i class=\"fa fa-1x fa-fw fa-phone me-1\"/>\n"
 "                        <span class=\"o_force_ltr\"><small>+1 555-555-5556</small></span>"
 msgstr ""
+"<i class=\"fa fa-1x fa-fw fa-phone me-1\"/>\n"
+"                        <span class=\"o_force_ltr\"><small>+1 555-555-5556</small></span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
@@ -838,6 +841,8 @@ msgid ""
 "<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
 "555-555-5556</span>"
 msgstr ""
+"<i class=\"fa fa-phone fa-fw me-2\"/><span class=\"o_force_ltr\">+1 "
+"555-555-5556</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.res_config_settings_view_form
@@ -983,6 +988,12 @@ msgid ""
 "                                                            <option value=\"3\">Three</option>\n"
 "                                                        </select>"
 msgstr ""
+"<select id=\"exampleSelect\" class=\"form-select\">\n"
+"                                                            <option selected=\"true\">Bu açılır menüyü açın</option>\n"
+"                                                            <option value=\"1\">Bir</option>\n"
+"                                                            <option value=\"2\">İki</option>\n"
+"                                                            <option value=\"3\">Üç</option>\n"
+"                                                        </select>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
@@ -1008,6 +1019,9 @@ msgid ""
 "                                    <i class=\"fa fa-info\"/>: type some of the first chars after 'google' is enough, we'll guess the rest.\n"
 "                                </small>"
 msgstr ""
+"<small class=\"text-muted\">\n"
+"                                    <i class=\"fa fa-info\"/>: 'google' sonrasında birkaç karakter yazmanız yeterlidir; geri kalanını biz tahmin edeceğiz.\n"
+"                                </small>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -1087,6 +1101,8 @@ msgid ""
 "<small><i class=\"fa fa-1x fa-fw fa-envelope me-1\"/> "
 "info@yourcompany.example.com</small>"
 msgstr ""
+"<small><i class=\"fa fa-1x fa-fw fa-envelope me-1\"/> "
+"info@yourcompany.example.com</small>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
@@ -1167,17 +1183,17 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.header_text_element
 msgid "<span class=\"o_force_ltr\">+1 555-555-5556</span>"
-msgstr ""
+msgstr "<span class=\"o_force_ltr\">+1 555-555-5556</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
 msgid "<span class=\"o_stat_text\">Connected</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Bağlı</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_form
 msgid "<span class=\"o_stat_text\">Offline</span>"
-msgstr ""
+msgstr "<span class=\"o_stat_text\">Çevrim dışı</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_image_gallery
@@ -1396,7 +1412,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_controller_pages_form_view
 msgid "<span>/model/</span>"
-msgstr ""
+msgstr "<span>/model/</span>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_timeline
@@ -1519,7 +1535,7 @@ msgstr "Son bağlantı 8 saatten fazla ise yeni bir ziyaret kabul edilir."
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_picture
 msgid "A punchy Headline"
-msgstr ""
+msgstr "Çarpıcı bir başlık"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -1563,7 +1579,7 @@ msgstr ""
 #: code:addons/website/static/src/xml/web_editor.xml:0
 #, python-format
 msgid "AI"
-msgstr ""
+msgstr "Yapay Zeka"
 
 #. module: website
 #. odoo-javascript
@@ -1581,7 +1597,7 @@ msgstr "Hakkında"
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_personal_s_image_text
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_timeline_s_text_block_h2
 msgid "About Me"
-msgstr ""
+msgstr "Hakkımda"
 
 #. module: website
 #: model:website.configurator.feature,name:website.feature_page_about_us
@@ -1632,7 +1648,7 @@ msgstr "Aksesuarlar"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Accordion"
-msgstr ""
+msgstr "Accordion"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -1650,6 +1666,8 @@ msgid ""
 "Achieve holistic health with personalized nutritional advice that "
 "complements your workouts, promoting overall well-being."
 msgstr ""
+"Antrenmanlarınızı tamamlayan kişiselleştirilmiş beslenme önerileriyle "
+"bütünsel sağlığa ulaşın ve genel iyilik halinizi destekleyin."
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__redirect_type
@@ -1887,6 +1905,8 @@ msgid ""
 "Adding a language requires to leave the editor. This will save all your "
 "changes, are you sure you want to proceed?"
 msgstr ""
+"Bir dil eklemek editörden çıkmayı gerektirir. Bu, tüm değişikliklerinizi "
+"kaydedecektir; devam etmek istediğinizden emin misiniz?"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_google_map_options
@@ -1900,6 +1920,9 @@ msgid ""
 "Adjust volume, skip tracks, answer calls, and activate voice assistants with"
 " a simple tap, keeping your hands free and your focus on what matters most."
 msgstr ""
+"Ses seviyesini ayarlayın, parçaları atlayın, aramalara yanıt verin ve sesli "
+"asistanları tek bir dokunuşla etkinleştirin; elleriniz serbest kalsın ve "
+"odağınız en önemli olan şeyde olsun."
 
 #. module: website
 #. odoo-javascript
@@ -2006,7 +2029,7 @@ msgstr "Tüm Web Siteleri"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "All You Can Eat"
-msgstr ""
+msgstr "Açık Büfe (Sınırsız Yeme)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -2033,7 +2056,7 @@ msgstr "Tüm bu simgeler ticari kullanım için tamamen ücretsizdir."
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_3_s_three_columns
 msgid "All-Day Comfort"
-msgstr ""
+msgstr "Tüm Gün Konfor"
 
 #. module: website
 #. odoo-javascript
@@ -2132,7 +2155,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_3_s_three_columns
 msgid "Amazing Sound Quality"
-msgstr ""
+msgstr "Harika Ses Kalitesi"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_numbers
@@ -2426,7 +2449,6 @@ msgstr "Arka Ucu"
 #. odoo-javascript
 #: code:addons/website/static/src/xml/website.editor.xml:0
 #: code:addons/website/static/src/xml/website.editor.xml:0
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 #, python-format
@@ -2465,7 +2487,7 @@ msgstr "Çantalar"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Banner"
-msgstr ""
+msgstr "Afiş"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_chart_options
@@ -2524,7 +2546,7 @@ msgstr "Beef Carpaccio"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "Beef Carpaccio, Filet Mignon 8oz and Cheesecake"
-msgstr ""
+msgstr "Dana Carpaccio, 8 oz Fileminyon ve Cheesecake"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__theme_ir_asset__directive__before
@@ -2572,7 +2594,7 @@ msgstr "Web formlarında kara listelenmiş"
 #: code:addons/website/static/src/components/dialog/add_page_dialog.xml:0
 #, python-format
 msgid "Blank Page"
-msgstr ""
+msgstr "Boş Sayfa"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
@@ -2867,6 +2889,8 @@ msgid ""
 "Cannot apply this option on current text selection. Try clearing the format "
 "and try again."
 msgstr ""
+"Bu seçeneği mevcut metin seçimi üzerine uygulayamazsınız. Biçimi temizlemeyi"
+" deneyin ve tekrar deneyin."
 
 #. module: website
 #. odoo-python
@@ -2921,7 +2945,7 @@ msgstr "Kariyer"
 #: code:addons/website/static/src/components/resource_editor/resource_editor.js:0
 #, python-format
 msgid "Careful"
-msgstr ""
+msgstr "Dikkatli"
 
 #. module: website
 #. odoo-javascript
@@ -3192,7 +3216,7 @@ msgstr "Seçmek için tıkla"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_personal_s_numbers
 msgid "Clients"
-msgstr ""
+msgstr "Müşteriler"
 
 #. module: website
 #. odoo-javascript
@@ -3335,7 +3359,7 @@ msgstr "Şirket"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Comparisons"
-msgstr ""
+msgstr "Kıyaslamalar"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -3486,6 +3510,8 @@ msgid ""
 "Contact us today to embark on your path to a healthier, more vibrant you. "
 "Your fitness journey begins here."
 msgstr ""
+"Daha sağlıklı ve enerjik bir siz için yolculuğunuza başlamak üzere bugün "
+"bizimle iletişime geçin. Fitness yolculuğunuz burada başlıyor."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_search
@@ -3592,7 +3618,7 @@ msgstr "Telif Hakkı"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Countdown"
-msgstr ""
+msgstr "Geri sayım"
 
 #. module: website
 #. odoo-javascript
@@ -3659,7 +3685,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Cras justo odio"
-msgstr ""
+msgstr "Cras justo odio"
 
 #. module: website
 #. odoo-javascript
@@ -4239,6 +4265,8 @@ msgid ""
 "Discover our comprehensive marketing service designed to amplify your "
 "brand's reach and impact."
 msgstr ""
+"Markanızın erişimini ve etkisini artırmak için tasarlanmış kapsamlı "
+"pazarlama hizmetimizi keşfedin."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -4290,32 +4318,32 @@ msgstr "Ekran"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 1"
-msgstr ""
+msgstr "Görünüm 1"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 2"
-msgstr ""
+msgstr "Görünüm 2"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 3"
-msgstr ""
+msgstr "Görünüm 3"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 4"
-msgstr ""
+msgstr "Görünüm 4"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 5"
-msgstr ""
+msgstr "Görünüm 5"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Display 6"
-msgstr ""
+msgstr "Görünüm 6"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_rating_options
@@ -4394,6 +4422,8 @@ msgid ""
 "Do not copy/paste code you do not understand, this could put your data at "
 "risk."
 msgstr ""
+"Anlamadığınız kodları kopyalayıp yapıştırmayın, bu verilerinizi riske "
+"atabilir."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_cards
@@ -4613,6 +4643,8 @@ msgid ""
 "EchoTunes comes with customizable ear tip sizes that provide a secure and "
 "comfortable fit."
 msgstr ""
+"EchoTunes, güvenli ve rahat bir uyum sağlayan özelleştirilebilir kulak ucu "
+"boyutlarıyla birlikte gelir."
 
 #. module: website
 #. odoo-javascript
@@ -4731,7 +4763,7 @@ msgstr "Elektronik"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Elements"
-msgstr ""
+msgstr "Öğeler"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_3_s_call_to_action
@@ -4945,6 +4977,8 @@ msgid ""
 "Experience a digital transformation like never before with our range of "
 "innovative solutions, designed to illuminate your brand's potential."
 msgstr ""
+"Markanızın potansiyelini ortaya çıkarmak için tasarlanmış yenilikçi "
+"çözümlerle daha önce hiç yaşamadığınız bir dijital dönüşüm deneyimleyin."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_pricing_s_text_block_2nd
@@ -4952,6 +4986,8 @@ msgid ""
 "Experience the power of our software without breaking the bank – choose a "
 "plan that suits you best and start unlocking its full potential today."
 msgstr ""
+"Bütçenizi zorlamadan yazılımımızın gücünü deneyimleyin – size en uygun planı"
+" seçin ve tam potansiyelini hemen kullanmaya başlayın."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_banner
@@ -4966,6 +5002,9 @@ msgid ""
 "functional teams and delivering successful outcomes with a strategic "
 "approach."
 msgstr ""
+"Etkili proje yönetimi konusunda deneyimli, çapraz fonksiyonel ekipleri "
+"yönlendirme ve stratejik bir yaklaşımla başarılı sonuçlar sunma becerisine "
+"sahip."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -5436,6 +5475,9 @@ msgid ""
 "He loves to keep his hands full by participating in the development of the "
 "software, marketing, and customer experience strategies."
 msgstr ""
+"Kurucu ve baş vizyoner olan Tony, şirketin arkasındaki itici güçtür. Yazılım"
+" geliştirme, pazarlama ve müşteri deneyimi stratejilerine katılarak kendini "
+"meşgul tutmayı sever."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_team_s_media_list
@@ -5494,6 +5536,8 @@ msgid ""
 "From SEO to social media, we create campaigns that not only get you noticed "
 "but also drive engagement and conversions."
 msgstr ""
+"SEO’dan sosyal medyaya kadar kampanyalar oluşturuyor, sizi sadece görünür "
+"kılmakla kalmıyor; etkileşim ve dönüşüm de sağlıyoruz."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5517,6 +5561,9 @@ msgid ""
 "digital landscape, we'll guide you through a strategic process that ensures "
 "your brand remains relevant and resonates with your audience."
 msgstr ""
+"Görsel kimliğinizi yeniden canlandırmaktan dijital ortam için mesajlarınızı "
+"yeniden düzenlemeye kadar, markanızın güncel kalmasını ve kitlenizde yankı "
+"uyandırmasını sağlayan stratejik bir süreç boyunca size rehberlik edeceğiz."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_cards
@@ -5530,7 +5577,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_features
 msgid "Frontend"
-msgstr ""
+msgstr "Ön uç"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_popup_options
@@ -5859,7 +5906,7 @@ msgstr "Hamburger menüsü"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_s_carousel
 msgid "Happy Hour"
-msgstr ""
+msgstr "İndirimli Saatler"
 
 #. module: website
 #. odoo-javascript
@@ -5909,7 +5956,7 @@ msgstr "Başlık Görünür"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Heading"
-msgstr ""
+msgstr "Başlık"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -5919,7 +5966,6 @@ msgstr "Başlık 1"
 #. module: website
 #. odoo-javascript
 #: code:addons/website/static/src/js/editor/snippets.editor.js:0
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #, python-format
 msgid "Headings"
 msgstr "Başlıklar"
@@ -5930,42 +5976,27 @@ msgid "Headings 1"
 msgstr "Başlık 1"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 2"
 msgstr "Başlık 2"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 3"
 msgstr "Başlık 3"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 4"
 msgstr "Başlık 4"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 5"
 msgstr "Başlık 5"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
-#, python-format
 msgid "Headings 6"
 msgstr "Başlık 6"
 
@@ -5989,7 +6020,7 @@ msgstr "Yükseklik (Kaydırılmış)"
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_banner
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_text_cover
 msgid "Hello, I'm Tony Fred"
-msgstr ""
+msgstr "Merhaba, ben Tony Fred"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_images_subtitles
@@ -6056,7 +6087,7 @@ msgstr "Yüksek"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 #, python-format
 msgid "Highlight"
-msgstr ""
+msgstr "Vurgu"
 
 #. module: website
 #. odoo-javascript
@@ -6200,6 +6231,9 @@ msgid ""
 "skills, coupled with effective communication, enable me to lead cross-"
 "functional teams to success."
 msgstr ""
+"Yönetim geçmişine sahip bir fullstack geliştiricisiyim. Analitik becerilerim"
+" ve etkili iletişim yeteneğim, fonksiyonlar arası ekipleri başarıyla "
+"yönlendirmeme olanak tanır."
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_theme_ir_asset__id
@@ -6325,6 +6359,8 @@ msgid ""
 "If you need to add analytics or marketing tags, inject code in your <head> "
 "or <body> instead."
 msgstr ""
+"Analitik veya pazarlama etiketleri eklemeniz gerekiyorsa, kodu <head>veya "
+"<body> yerleştirin."
 
 #. module: website
 #. odoo-javascript
@@ -6362,7 +6398,7 @@ msgstr "Kapak resmi"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "Image Gallery"
-msgstr ""
+msgstr "Görsel Galerisi"
 
 #. module: website
 #. odoo-javascript
@@ -6886,6 +6922,9 @@ msgid ""
 "It's time to elevate your fitness journey with coaching that's as unique as "
 "you are. Choose your path, embrace the guidance, and transform your life."
 msgstr ""
+"Sizin kadar benzersiz bir koçlukla fitness yolculuğunuzu ileriye taşımanın "
+"zamanı geldi. Yolunuzu seçin, rehberliği benimseyin ve hayatınızı "
+"dönüştürün."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -6933,6 +6972,8 @@ msgid ""
 "Join us for a remarkable dining experience that blends exquisite flavors "
 "with a warm ambiance."
 msgstr ""
+"Eşsiz tatların sıcak bir ortamla buluştuğu olağanüstü bir yemek deneyimi "
+"için bize katılın."
 
 #. module: website
 #. odoo-javascript
@@ -7220,6 +7261,8 @@ msgid ""
 "digital landscape. Reach out today and let's build something extraordinary "
 "together."
 msgstr ""
+"Dijital ortamda öne çıkan yenilikçi çözümler oluşturmak için iş birliği "
+"yapalım. Bugün bize ulaşın ve birlikte olağanüstü bir şey inşa edelim."
 
 #. module: website
 #. odoo-javascript
@@ -7241,6 +7284,8 @@ msgid ""
 "Let's turn your vision into reality. Contact us today to set your brand on "
 "the path to digital excellence with us."
 msgstr ""
+"Vizyonunuzu gerçeğe dönüştürelim. Markanızı dijital mükemmelliğe giden yola "
+"taşımak için bugün bizimle iletişime geçin."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -7342,10 +7387,7 @@ msgid "Linkedin"
 msgstr "Linkedin"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
-#, python-format
 msgid "Links"
 msgstr "Bağlantılar"
 
@@ -7368,7 +7410,7 @@ msgstr "Liste"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "List-group"
-msgstr ""
+msgstr "Liste-grup"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__website_controller_page__page_type__listing
@@ -7448,7 +7490,7 @@ msgstr "Düşük"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Main"
-msgstr ""
+msgstr "Ana"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_product_catalog
@@ -7572,6 +7614,8 @@ msgid ""
 "Mastering frontend craftsmanship with expertise in HTML, CSS, and JavaScript"
 " to craft captivating and responsive user experiences."
 msgstr ""
+"HTML, CSS ve JavaScript uzmanlığıyla ön yüz geliştirme sanatında ustalaşarak"
+" etkileyici ve duyarlı kullanıcı deneyimleri tasarlamak."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -7618,7 +7662,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "Mediterranean buffet of starters, main dishes and desserts"
-msgstr ""
+msgstr "Başlangıç, ana yemek ve tatlılardan oluşan Akdeniz büfesi"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_alert_options
@@ -7632,7 +7676,7 @@ msgstr "Aracı:"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_full_1_s_text_block_h2
 msgid "Meet The Team"
-msgstr ""
+msgstr "Ekiple Tanışın"
 
 #. module: website
 #. odoo-javascript
@@ -7709,7 +7753,7 @@ msgstr "Menü Öğesi %s"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "Menu One"
-msgstr ""
+msgstr "Menü Bir"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website_configurator_feature__menu_sequence
@@ -7719,7 +7763,7 @@ msgstr "Menü Sırası"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "Menu Two"
-msgstr ""
+msgstr "Menü İki"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_theme_website_menu__copy_ids
@@ -7850,7 +7894,7 @@ msgstr "Mobil önizleme"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
 msgid "Modal"
-msgstr ""
+msgstr "Modal"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -8208,7 +8252,7 @@ msgstr "Sonraki"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.step_wizard
 msgid "Next:"
-msgstr ""
+msgstr "Sonraki:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs_options
@@ -8248,7 +8292,7 @@ msgstr "Özelleştirme yok"
 #: code:addons/website/static/src/xml/website_form_editor.xml:0
 #, python-format
 msgid "No matching record!"
-msgstr ""
+msgstr "Eşleşen kayıt yok!"
 
 #. module: website
 #: model_terms:ir.actions.act_window,help:website.website_visitor_page_action
@@ -8346,7 +8390,7 @@ msgstr ""
 msgid ""
 "Note: To embed code in this specific page, use the \"Embed Code\" building "
 "block"
-msgstr ""
+msgstr "Not: Bu sayfaya kod gömmek için \"Kod Göm\" yapı bloğunu kullanın."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.show_website_info
@@ -8381,7 +8425,7 @@ msgstr "Sayılar"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_2_s_three_columns
 msgid "Nutritional Guidance"
-msgstr ""
+msgstr "Beslenme Rehberliği"
 
 #. module: website
 #. odoo-javascript
@@ -8670,6 +8714,8 @@ msgid ""
 "Our Coaching combines personalized fitness plans with mindfulness practices,"
 " ensuring you achieve harmony in your body and peace in your mind."
 msgstr ""
+"Koçluğumuz, kişiselleştirilmiş fitness planlarını farkındalık "
+"uygulamalarıyla birleştirerek bedeninizde denge, zihninizde huzur sağlar."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.template_footer_links
@@ -8684,12 +8730,12 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_pricing_5_s_text_block_h1
 msgid "Our Menus"
-msgstr ""
+msgstr "Menülerimiz"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_three_columns
 msgid "Our Mission"
-msgstr ""
+msgstr "Misyonumuz"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_3_s_text_block_h2
@@ -8717,7 +8763,7 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_mini_s_text_block_h2
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_three_columns
 msgid "Our Story"
-msgstr ""
+msgstr "Hikayemiz"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_picture
@@ -8728,7 +8774,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_three_columns
 msgid "Our Values"
-msgstr ""
+msgstr "Değerlerimiz"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_2_s_three_columns
@@ -8736,6 +8782,8 @@ msgid ""
 "Our experienced fitness coaches design workouts that align with your goals, "
 "fitness level, and preferences."
 msgstr ""
+"Deneyimli fitness antrenörlerimiz, hedeflerinize, kondisyon seviyenize ve "
+"tercihinize uygun egzersiz programları hazırlar."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_s_three_columns
@@ -8744,6 +8792,9 @@ msgid ""
 "driven by a relentless pursuit of innovation and a commitment to exceeding "
 "expectations."
 msgstr ""
+"Misyonumuz, yenilikçiliğe olan durmak bilmeyen tutkumuz ve beklentileri aşma"
+" taahhüdümüz sayesinde dönüştürücü deneyimler yaratmak ve büyümeyi teşvik "
+"etmektir."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_s_image_text_2nd
@@ -8752,6 +8803,9 @@ msgid ""
 "industry knowledge to analyze your current strategies, identify "
 "opportunities, and formulate data-driven recommendations."
 msgstr ""
+"Deneyimli danışmanlarımız; mevcut stratejilerinizi analiz etmek, fırsatları "
+"belirlemek ve veriye dayalı öneriler formüle etmek için derin sektör "
+"bilgilerinden yararlanarak size özel rehberlik sağlar."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -8787,6 +8841,9 @@ msgid ""
 "providing exceptional service. They reflect our dedication to integrity, "
 "collaboration, and client satisfaction."
 msgstr ""
+"Değerlerimiz kültürümüzü şekillendirir, kararlarımızı etkiler ve olağanüstü "
+"hizmet sunmamızda bize rehberlik eder. Bu değerler; dürüstlük, iş birliği ve"
+" müşteri memnuniyetine olan bağlılığımızı yansıtır."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -8817,7 +8874,7 @@ msgstr "İçerik Üzerinden"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Overlay"
-msgstr ""
+msgstr "Katman"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -9063,7 +9120,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_2_s_three_columns
 msgid "Personalized Workouts"
-msgstr ""
+msgstr "Kişiye Özel Egzersiz Programları"
 
 #. module: website
 #. odoo-javascript
@@ -9103,7 +9160,7 @@ msgstr "Haplar"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_share
 msgid "Pinterest"
-msgstr ""
+msgstr "Pinterest"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
@@ -9171,6 +9228,8 @@ msgid ""
 "Please fill in the form correctly. You uploaded too many files. (Maximum %s "
 "files)"
 msgstr ""
+"Lütfen formu doğru şekilde doldurun. Çok fazla dosya yüklediniz. (Azami %s "
+"dosya)"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_big_icons_subtitles
@@ -9305,13 +9364,6 @@ msgid "Primary"
 msgstr "Birincil"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Primary Buttons"
-msgstr "Ana Butonlar"
-
-#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Primary Style"
 msgstr "Birincil Stil"
@@ -9372,6 +9424,8 @@ msgid ""
 "Proficient in backend development, specializing in Python, Django, and "
 "database management to create efficient and scalable solutions."
 msgstr ""
+"Python, Django ve veritabanı yönetimi konusunda uzmanlaşarak verimli ve "
+"ölçeklenebilir çözümler geliştiren backend geliştirme yetkinliği."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_tabs
@@ -9404,7 +9458,7 @@ msgstr "İlerleme Çubuğu Ağırlığı"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_2_s_three_columns
 msgid "Progress Tracking"
-msgstr ""
+msgstr "İlerleme Takibi"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_progress_bar
@@ -9440,7 +9494,7 @@ msgstr "Genel Kullanıcılar"
 #. module: website
 #: model:res.groups,name:website.website_page_controller_expose
 msgid "Public access to arbitrary exposed model"
-msgstr ""
+msgstr "Genel erişime açık rastgele modele erişim"
 
 #. module: website
 #. odoo-javascript
@@ -9590,6 +9644,8 @@ msgid ""
 "Ready to embark on your auditory adventure? Order your EchoTunes Wireless "
 "Earbuds today and let the symphony begin."
 msgstr ""
+"Ses maceranıza hazır mısınız? EchoTunes Kablosuz Kulaklıklarınızı bugün "
+"sipariş edin ve senfoni başlasın."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_s_features
@@ -9880,6 +9936,8 @@ msgid ""
 "Robots.txt: This file tells to search engine crawlers which pages or files "
 "they can or can't request from your site."
 msgstr ""
+"Robots.txt: Bu dosya arama motoru tarayıcılarına sitenizde hangi sayfa veya "
+"dosyalara erişebileceklerini ya da erişemeyeceklerini bildirir."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -10148,13 +10206,6 @@ msgstr "İkinci Özellik listesi"
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 msgid "Secondary"
 msgstr "İkincil"
-
-#. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
-#, python-format
-msgid "Secondary Buttons"
-msgstr "İkincil Butonlar"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -10701,6 +10752,8 @@ msgid ""
 "Some quick example text to build on the card title and make up the bulk of "
 "the card's content."
 msgstr ""
+"Kart başlığını temel alıp kartın ana içeriğini oluşturacak birkaç hızlı "
+"örnek metin."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.bs_debug_view
@@ -10814,7 +10867,7 @@ msgstr "Şimdi Başla"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_banner
 msgid "Start Now <span class=\"fa fa-angle-right ms-2\"/>"
-msgstr ""
+msgstr "Hemen Başlayın <span class=\"fa fa-angle-right ms-2\"/>"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_comparisons
@@ -10873,6 +10926,9 @@ msgid ""
 "innovative force. Our journey, born in a garage, reflects the power of "
 "passion and hard work."
 msgstr ""
+"Geçmişimize adım atın ve basit bir fikrin yenilikçi bir güce dönüşümüne "
+"tanık olun. Bir garajda başlayan yolculuğumuz, tutku ve sıkı çalışmanın "
+"gücünü yansıtıyor."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
@@ -10914,7 +10970,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_0_s_three_columns
 msgid "Strength Training:"
-msgstr ""
+msgstr "Kuvvet Antrenmanı:"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -11133,13 +11189,10 @@ msgid "Test your robots.txt with Google Search Console"
 msgstr "Google Arama Konsolu ile robots.txt test edin"
 
 #. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website.editor.xml:0
 #: model_terms:ir.ui.view,arch_db:website.grid_layout_options
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
 #: model_terms:ir.ui.view,arch_db:website.snippets
-#, python-format
 msgid "Text"
 msgstr "Metin"
 
@@ -11226,6 +11279,8 @@ msgid ""
 "battery life that lasts up to 17h, you can enjoy your favorite tunes without"
 " interruption."
 msgstr ""
+"Kompakt şarj kutusu, hareket halindeyken kolay şarj imkânı sunar ve 17 saate"
+" kadar pil ömrüyle favori müziklerinizi kesintisiz dinlemenizi sağlar."
 
 #. module: website
 #. odoo-python
@@ -11343,6 +11398,13 @@ msgid "The limit must be between 1 and 16."
 msgstr "Sınır 1 ile 16 arasında olmalıdır."
 
 #. module: website
+#. odoo-javascript
+#: code:addons/website/static/src/client_actions/configurator/configurator.js:0
+#, python-format
+msgid "The logo is too large. Please upload a logo smaller than 2.5 MB."
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_website_form_options
 msgid "The maximum number of files that can be uploaded."
 msgstr ""
@@ -11362,6 +11424,8 @@ msgstr "Geri sayım sona erdiğinde mesaj görünür olacaktır"
 msgid ""
 "The name is used to generate the URL and is shown in the browser title bar"
 msgstr ""
+"Ad, URL oluşturmak ve tarayıcı başlık çubuğunda görüntülenmek için "
+"kullanılır."
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_controller_page__name_slugified
@@ -11533,6 +11597,9 @@ msgid ""
 "nutrition guidance, and expert coaching. Elevate your fitness level and "
 "achieve feats you never thought possible."
 msgstr ""
+"Bu koçluk programı; özel olarak güç odaklı antrenmanlar, beslenme rehberliği"
+" ve uzman koçluk hizmetleri sunar. Fitness seviyenizi yükseltin ve hiç "
+"mümkün olmadığını düşündüğünüz başarıları elde edin."
 
 #. module: website
 #: model:ir.model.fields,help:website.field_res_config_settings__favicon
@@ -11550,6 +11617,8 @@ msgid ""
 "This field is mandatory for this action. You cannot remove it. Try hiding it"
 " with the 'Visibility' option instead and add it a default value."
 msgstr ""
+"Bu işlem için bu alan zorunludur. Kaldıramazsınız. Bunun yerine ‘Görünürlük’"
+" seçeneğini kullanarak gizlemeyi deneyin ve varsayılan bir değer atayın."
 
 #. module: website
 #: model:ir.model.fields,help:website.field_website_controller_page__arch_base
@@ -11596,6 +11665,8 @@ msgid ""
 "This font already exists, you can only add it as a local font to replace the"
 " server version."
 msgstr ""
+"Bu yazı tipi zaten mevcut, yalnızca sunucu sürümünü değiştirmek için yerel "
+"bir yazı tipi olarak ekleyebilirsiniz."
 
 #. module: website
 #. odoo-javascript
@@ -11620,6 +11691,10 @@ msgid ""
 "aliam Aquitani, tertiam. Integer legentibus erat a ante historiarum dapibus."
 " Phasellus laoreet lorem vel dolor tempus vehicula."
 msgstr ""
+"Bu bir paragraftır. Ambitioni dedisse scripsisse iudicaretur. Nihilne te "
+"nocturnum praesidium Palati, nihil urbis vigiliae. Unam incolunt Belgae, "
+"aliam Aquitani, tertiam. Integer legentibus erat a ante historiarum dapibus."
+" Phasellus laoreet lorem vel dolor tempus vehicula."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_banner
@@ -11636,6 +11711,8 @@ msgid ""
 "This is a wider card with supporting text below as a natural lead-in to "
 "additional content. This content is a little bit longer."
 msgstr ""
+"Bu, ek içerik için doğal bir giriş niteliğinde destekleyici metin içeren "
+"daha geniş bir karttır. Bu içerik biraz daha uzundur."
 
 #. module: website
 #: model:ir.ui.view,website_meta_description:website.contactus
@@ -11729,7 +11806,7 @@ msgstr "Küçük Resimler"
 #: model_terms:ir.ui.view,arch_db:website.s_social_media
 #, python-format
 msgid "TikTok"
-msgstr ""
+msgstr "TikTok"
 
 #. module: website
 #: model:ir.model.fields,field_description:website.field_website__social_tiktok
@@ -12099,6 +12176,13 @@ msgstr ""
 "Bu filtrelerle URL'nin eşleşmesi CDN Temel URL kullanılarak tekrar yazılacak"
 
 #. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "URL must not start with '#'."
+msgstr ""
+
+#. module: website
 #: model:ir.model.fields,field_description:website.field_website_rewrite__url_to
 msgid "URL to"
 msgstr "URL adresi"
@@ -12420,7 +12504,7 @@ msgstr "Değer"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_three_columns_menu
 msgid "Vegetable Salad, Beef Burger and Mango Ice Cream"
-msgstr ""
+msgstr "Sebze Salatası, Dana Burger ve Mango Dondurması"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippet_options
@@ -12717,6 +12801,9 @@ msgid ""
 "understanding your fitness aspirations, your current lifestyle, and any "
 "challenges you face."
 msgstr ""
+"Her fitness yolculuğunun benzersiz olduğuna inanıyoruz. Yaklaşımımız, "
+"fitness hedeflerinizi, mevcut yaşam tarzınızı ve karşılaştığınız zorlukları "
+"anlamakla başlar."
 
 #. module: website
 #. odoo-javascript
@@ -12756,6 +12843,8 @@ msgid ""
 "We monitor your progress meticulously, adjusting your plan as needed to "
 "ensure continuous improvement and results."
 msgstr ""
+"İlerlemenizi titizlikle takip ediyor; sürekli iyileştirme ve sonuç odaklı "
+"çalışma için planınızı gerektiğinde ayarlıyoruz."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_cards
@@ -12802,6 +12891,8 @@ msgid ""
 "We're driven by the aspiration to redefine industry standards, to exceed the"
 " expectations of our clients, and to foster a culture of continuous growth."
 msgstr ""
+"Sektör standartlarını yeniden tanımlama, müşterilerimizin beklentilerini "
+"aşma ve sürekli büyüme kültürünü geliştirme arzusuyla hareket ediyoruz."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.website_visitor_view_tree
@@ -13121,7 +13212,7 @@ msgstr "Web Sitelerini Çevirme"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_0_s_three_columns
 msgid "Weight Loss Transformation"
-msgstr ""
+msgstr "Kilo Verme Dönüşümü"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_s_text_block_2nd
@@ -13142,7 +13233,7 @@ msgstr "Hoşgeldiniz"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_services_0_s_three_columns
 msgid "Wellness Coaching"
-msgstr ""
+msgstr "İyi Yaşam Koçluğu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_about_personal_s_text_block_h2
@@ -13157,7 +13248,7 @@ msgstr "Ne görürsen onu alırsın"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_share
 msgid "WhatsApp"
-msgstr ""
+msgstr "WhatsApp"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_hr_options
@@ -13173,7 +13264,7 @@ msgstr ""
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.new_page_template_landing_3_s_three_columns
 msgid "Wireless Freedom"
-msgstr ""
+msgstr "Kablosuz Özgürlük"
 
 #. module: website
 #: model:ir.model.fields.selection,name:website.selection__ir_ui_view__visibility__password
@@ -13187,6 +13278,9 @@ msgid ""
 " support, you'll shed unwanted pounds while building healthy habits that "
 "last."
 msgstr ""
+"Kişiselleştirilmiş fitness planları, özel beslenme rehberliği ve sürekli "
+"destek sayesinde, kalıcı sağlıklı alışkanlıklar geliştirirken istenmeyen "
+"kilolardan kurtulacaksınız."
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_mega_menu_menus_logos
@@ -13259,13 +13353,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:website.s_timeline_options
 msgid "Year"
 msgstr "Yıl"
-
-#. module: website
-#. odoo-javascript
-#: code:addons/website/static/src/xml/website_form_editor.xml:0
-#, python-format
-msgid "Yes"
-msgstr "Evet"
 
 #. module: website
 #. odoo-javascript
@@ -13352,6 +13439,8 @@ msgid ""
 "You cannot delete this website menu as this serves as the default parent "
 "menu for new websites (e.g., /shop, /event, ...)."
 msgstr ""
+"Bu web sitesi menüsünü silemezsiniz, çünkü bu menü yeni web siteleri için "
+"varsayılan üst menü olarak kullanılır (ör. /shop, /event, ...)."
 
 #. module: website
 #. odoo-javascript
@@ -13461,6 +13550,8 @@ msgid ""
 "Your Embed Code snippet doesn't have anything to display. Click on Edit to "
 "modify it."
 msgstr ""
+"Gömülü Kod parçacığınızda görüntülenecek bir şey yok. Düzenlemek için "
+"Düzenle’ye tıklayın."
 
 #. module: website
 #. odoo-javascript
@@ -13487,6 +13578,8 @@ msgid ""
 "Your brand is your story. We help you tell it through cohesive visual "
 "identity and messaging that resonates with your audience."
 msgstr ""
+"Markanız sizin hikayenizdir. Bunu, hedef kitlenizde yankı uyandıran bütünsel"
+" bir görsel kimlik ve mesajlaşma ile anlatmanıza yardımcı oluyoruz."
 
 #. module: website
 #. odoo-javascript
@@ -13649,6 +13742,13 @@ msgid "and copy paste the address of the font page here."
 msgstr "tıklayın ve yazı tipi sayfasının adresini buraya yapıştırın."
 
 #. module: website
+#. odoo-python
+#: code:addons/website/models/website_rewrite.py:0
+#, python-format
+msgid "base URL of 'URL to' should not be same as 'URL from'."
+msgstr ""
+
+#. module: website
 #: model_terms:ir.ui.view,arch_db:website.snippets
 msgid "big"
 msgstr "büyük"
@@ -13750,7 +13850,7 @@ msgstr "markayı geliştirme"
 #: code:addons/website/static/src/components/website_loader/website_loader.js:0
 #, python-format
 msgid "e-learning platform"
-msgstr ""
+msgstr "e-öğrenme platformu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_countdown_options
@@ -13980,7 +14080,7 @@ msgstr "o-renk-"
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.s_instagram_page_options
 msgid "odoo.official"
-msgstr ""
+msgstr "odoo.official"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.step_wizard
@@ -13999,7 +14099,7 @@ msgstr ""
 #: code:addons/website/static/src/components/website_loader/website_loader.js:0
 #, python-format
 msgid "online store"
-msgstr ""
+msgstr "çevrim içi mağaza"
 
 #. module: website
 #. odoo-javascript
@@ -14055,7 +14155,7 @@ msgstr "promosyon, karakteristik, kalite"
 #: code:addons/website/static/src/components/website_loader/website_loader.js:0
 #, python-format
 msgid "recruitment platform"
-msgstr ""
+msgstr "işe alım platformu"
 
 #. module: website
 #: model_terms:ir.ui.view,arch_db:website.searchbar_input_snippet_options

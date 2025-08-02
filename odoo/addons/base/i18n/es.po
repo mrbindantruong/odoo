@@ -2461,7 +2461,7 @@ msgid ""
 "Allow website visitors to chat with the collaborators. This module also brings a feedback tool for the livechat and web pages to display your channel with its ratings on the website.\n"
 msgstr ""
 "\n"
-"Permita que los visitantes del sitio web chateen con los colaboradores. Este módulo también incluye una herramienta de retroalimentación para el chat en vivo y las páginas web para que su canal muestre sus calificaciones en el sitio web.\n"
+"Permita que los visitantes del sitio web chateen con los colaboradores. Este módulo también incluye una herramienta de retroalimentación para el chat en directo y las páginas web para que su canal muestre sus calificaciones en el sitio web.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_picking
@@ -3395,7 +3395,7 @@ msgid ""
 "Bridge between HR and Livechat."
 msgstr ""
 "\n"
-"        Enlace entre los módulos RR. HH. y Chat en vivo."
+"        Enlace entre los módulos RR. HH. y Chat en directo."
 
 #. module: base
 #: model:ir.module.module,description:base.module_hr_maintenance
@@ -4710,7 +4710,7 @@ msgstr ""
 "IVA para One Stop Shop (OSS) en UE\n"
 "==========================\n"
 "\n"
-"A partir del 1 de julio, 2021, los negocios de la UE que venden bienes dentro de la UE cuyo coste es mayor que 10.000 EUR y cuando el comprador está ubicado en otro estado miembro de la UE deben registrarse y pagar el IVA dentro del estado miembro en el que viva el comprador.\n"
+"A partir del 1 de julio, 2021, los negocios de la UE que venden bienes dentro de la UE cuyo coste es mayor que 10.000 EUR y cuando el comprador está situado en otro estado miembro de la UE deben registrarse y pagar el IVA dentro del estado miembro en el que viva el comprador.\n"
 "Bajo esta medida que cubra a toda la UE, puede continuar aplicando las reglas locales para el IVA en sus ventas transfronterizas. Para simplificar la aplicación de esta directiva de la UE, el esquema de registro para puntos únicos de compra permite que los negocios hagan una única declaración de impuestos.\n"
 "\n"
 "Este módulo funciona ya que ayuda a la creación de las posiciones fiscales requeridas en la UE y los impuestos para aplicarlos automáticamente y registrar los impuestos requeridos.\n"
@@ -6187,7 +6187,7 @@ msgstr ""
 "    * Prestaciones y deducciones \n"
 "    * Integrado con la gestión de las ausencias \n"
 "    * Gastos médicos, de viajes, por cuidado de niños... \n"
-"    - Asesoramiento y informes sobre la nómina\n"
+"    - Asesoramiento e informes sobre la nómina\n"
 "    - Salarios anuales por persona y salarios anuales por informe de empleado\n"
 
 #. module: base
@@ -6417,7 +6417,7 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Soporte por chat en vivo\n"
+"Soporte por chat en directo\n"
 "==========================\n"
 "\n"
 "Permite enviar widgets de mensajería instantánea desde cualquier página web que se\n"
@@ -10201,7 +10201,7 @@ msgid ""
 "It also provides new tools to analyse your data.\n"
 msgstr ""
 "\n"
-"Este módulo añade un nueva vista de tablero en la aplicación Sitio web.\n"
+"Este módulo añade una nueva vista de tablero en la aplicación Sitio web.\n"
 "Este nuevo tipo de vista contiene algunas estadísticas básicas, una gráfica y una subvista de tabla dinámica que permiten obtener una rápida vista general de sus ventas en línea.\n"
 "También ofrece nuevas herramientas para analizar sus datos.\n"
 
@@ -10452,7 +10452,7 @@ msgid ""
 "This module allows ecommerce users to book an order with the shiprocket using cash on delivery feature.\n"
 msgstr ""
 "\n"
-"Este módulo permite que los usuarios del comercio electrónico reserven un pedido con la función Pago a contra reembolso de Shiprocket.\n"
+"Este módulo permite que los usuarios del comercio electrónico reserven un pedido con la función Pago contra reembolso de Shiprocket.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_website_sale_ups
@@ -12442,12 +12442,12 @@ msgid ""
 "\n"
 msgstr ""
 "\n"
-"Integración de la mensajería instantánea del chat en vivo del sitio web con el módulo de servicio de asistencia\n"
+"Integración de la mensajería instantánea del chat en directo del sitio web con el módulo de servicio de asistencia\n"
 "=======================================================\n"
 "\n"
 "Funciones:\n"
 "\n"
-"    - Tenga un canal de chat en vivo relacionado con su equipo para responder a las preguntas de sus clientes.\n"
+"    - Tenga un canal de chat en directo relacionado con su equipo para responder a las preguntas de sus clientes.\n"
 "    - Crea nuevos tickets fácilmente utilizando los comandos del canal.\n"
 "\n"
 
@@ -14926,7 +14926,7 @@ msgstr "Añada información de leads y oportunidades en los SMS de envío masivo
 #. module: base
 #: model:ir.module.module,summary:base.module_im_livechat_mail_bot
 msgid "Add livechat support for OdooBot"
-msgstr "Añada soporte por chat en vivo para OdooBot"
+msgstr "Añada soporte por chat en directo para OdooBot"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_social_sale
@@ -15116,7 +15116,7 @@ msgid ""
 "Adds a stat button on lead form view to access their livechat sessions."
 msgstr ""
 "Añade un botón de estadísticas en la vista del formulario del lead para "
-"acceder a sus sesiones de chat en vivo."
+"acceder a sus sesiones de chat en directo."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_loyalty_delivery
@@ -17497,7 +17497,7 @@ msgstr "Ludificación CRM"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_livechat
 msgid "CRM Livechat"
-msgstr "Chat en vivo CRM"
+msgstr "Chat en directo CRM"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_mail_plugin
@@ -19138,7 +19138,7 @@ msgstr "Cree una hoja de trabajo personalizable"
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_livechat
 msgid "Create lead from livechat conversation"
-msgstr "Cree un lead a partir de una conversación en el chat en vivo "
+msgstr "Cree un lead a partir de una conversación en el chat en directo "
 
 #. module: base
 #: model:ir.module.module,description:base.module_event_crm
@@ -19660,8 +19660,8 @@ msgstr "D - SUMINISTRO DE ELECTRICIDAD, GAS, VAPOR Y AIRE ACONDICIONADO"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_delivery_dhl
-msgid "DHL Express Shipping"
-msgstr "Envío por DHL Express"
+msgid "DHL Express Shipping (Legacy)"
+msgstr "Envío por DHL Express (obsoleto)"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_din5008
@@ -23449,7 +23449,7 @@ msgstr "H - TRANSPORTE Y ALMACENAMIENTO"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_livechat
 msgid "HR - Livechat"
-msgstr "RR. HH. - Chat en vivo"
+msgstr "RR. HH. - Chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_hr_holidays_attendance
@@ -26452,7 +26452,7 @@ msgstr "Archivo de auditoría estándar para impuestos de Lituania"
 #: model:ir.module.category,name:base.module_category_website_live_chat
 #: model:ir.module.module,shortdesc:base.module_im_livechat
 msgid "Live Chat"
-msgstr "Chat en vivo"
+msgstr "Chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_currency_rate_live
@@ -28968,7 +28968,7 @@ msgstr ""
 "Interactúe con sus visitantes\n"
 "-------------------------\n"
 "\n"
-"La función integrada de chat en vivo del sitio web le permite comenzar a chatear en tiempo real con\n"
+"La función integrada de chat en directo del sitio web le permite comenzar a chatear en tiempo real con\n"
 "sus visitantes, de esta manera podrá obtener comentarios sobre sus publicaciones recientes o ideas para escribir nuevas\n"
 "publicaciones.\n"
 "\n"
@@ -29367,7 +29367,7 @@ msgstr ""
 "empleados. Siga a personas o documentos específicos y únase a grupos de interés para\n"
 "compartir experiencia y documentos.\n"
 "\n"
-"Interactúe con sus compañeros de trabajo en tiempo real con el chat en vivo del sitio web.\n"
+"Interactúe con sus compañeros de trabajo en tiempo real con el chat en directo del sitio web.\n"
 "\n"
 "Realice un seguimiento del tiempo y las asistencias\n"
 "--------------------------\n"
@@ -29544,7 +29544,7 @@ msgstr ""
 "\n"
 "Obtenga su planificación de recursos de fabricación precisa con su integración completa\n"
 "con aplicaciones de ventas y compras. La integración contable permite\n"
-"valoración contable y informes más profundos sobre los costes e ingresos de su\n"
+"valoración contable e informes más profundos sobre los costes e ingresos de su\n"
 "operaciones de fabricación.\n"
 "\n"
 
@@ -30641,7 +30641,7 @@ msgstr ""
 "### Servicio al cliente\n"
 "\n"
 "-   Portal del cliente para rastrear pedidos\n"
-"-   Compra asistida con chats en vivo desde el sitio web\n"
+"-   Compra asistida con chats en directo desde el sitio web\n"
 "-   Gestión de devoluciones\n"
 "-   Reglas de envío avanzadas\n"
 "-   Cupones o certificados de regalo\n"
@@ -30742,7 +30742,7 @@ msgstr "OdooBot - RR. HH."
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_im_livechat_mail_bot
 msgid "OdooBot for livechat"
-msgstr "OdooBot para chat en vivo"
+msgstr "OdooBot para chat en directo"
 
 #. module: base
 #: model:res.partner.category,name:base.res_partner_category_12
@@ -30855,7 +30855,7 @@ msgstr "Estands de eventos en línea"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_event_sale
 msgid "Online Event Ticketing"
-msgstr "Venta de entradas en línea eventos"
+msgstr "Venta de entradas en línea para eventos"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_hr_recruitment
@@ -31489,13 +31489,14 @@ msgid ""
 "due. My Company (San Francisco) will be authorized to suspend any provision "
 "of services without prior warning in the event of late payment."
 msgstr ""
-"Nuestras facturas se pueden pagar dentro de 21 días hábiles, a no ser que se"
-" indique un megen de tiempo diferente, ya sea en la factura o en la orden. "
-"En el caso de que no se pague para la fecha acordada, My Company (San "
-"Francisco) se reserva el derecho a pedir un pago de intereses fijo que puede"
-" ser del 10% de la suma que sigue sin pagarse para el último día. My Company"
-" (San Francisco) tendrá la autorización de suspender cualquier servicio "
-"provisional sin dar aviso previo en caso de que haya un pago atrasado."
+"Nuestras facturas se pueden pagar dentro de 21 días laborables, a no ser que"
+" se indique un margen de tiempo diferente, ya sea en la factura o en el "
+"pedido. En el caso de que no se pague para la fecha acordada, My Company "
+"(San Francisco) se reserva el derecho a pedir un pago de intereses fijo que "
+"puede ser del 10% de la suma que sigue sin pagarse para el último día. My "
+"Company (San Francisco) tendrá la autorización de suspender cualquier "
+"servicio provisional sin dar aviso previo en caso de que haya un pago "
+"atrasado."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_ir_mail_server_search
@@ -32960,7 +32961,7 @@ msgstr ""
 "y documentos mediante tareas y tickets. Comience a compartir de inmediato con la integración\n"
 "de correo electrónico.\n"
 "\n"
-"Hable con otros usuarios o clientes con la función de chat en vivo desde la página web.\n"
+"Hable con otros usuarios o clientes con la función de chat en directo desde la página web.\n"
 "\n"
 "Redacción colaborativa\n"
 "---------------------\n"
@@ -33135,7 +33136,7 @@ msgstr "Prospectos"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_sale_shiprocket
 msgid "Provide cash on delivery for website users"
-msgstr "Ofrezca pago a contra reembolso para usuarios del sitio web"
+msgstr "Ofrezca pago contra reembolso para usuarios del sitio web"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_mail_mobile
@@ -35182,8 +35183,14 @@ msgstr "Envíe sus paquetes a través de Shiprocket y rastréelos en línea"
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_dhl
-msgid "Send your shippings through DHL and track them online"
-msgstr "Haga sus envíos a través de DHL y rastréelos en línea"
+msgid ""
+"This is the legacy integration with DHL Express that is no longer supported."
+" Please install the new \"DHL Express Shipping\" module and uninstall this "
+"one as soon as possible."
+msgstr ""
+"Esta es una integración de DHL Express obsoleta y ya no es compatible. "
+"Instale el nuevo modulo “Envíos por DHL Express” y desinstale este tan "
+"pronto como le sea posible."
 
 #. module: base
 #: model:ir.module.module,description:base.module_delivery_fedex_rest
@@ -35473,7 +35480,7 @@ msgstr "Envío por Shiprocket"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_shiprocket
 msgid "Shiprocket: Cash on Delivery"
-msgstr "Shiprocket: pago a contra reembolso"
+msgstr "Shiprocket: pago contra reembolso"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_sale_wishlist
@@ -36163,7 +36170,7 @@ msgstr "Tablero de hojas de cálculo para recursos humanos"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_im_livechat
 msgid "Spreadsheet dashboard for live chat"
-msgstr "Tablero de hojas de cálculo para chat en vivo"
+msgstr "Tablero de hojas de cálculo para chat en directo"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_spreadsheet_dashboard_mrp_account
@@ -37038,17 +37045,17 @@ msgstr "Prueba de Suscripción de ventas"
 #. module: base
 #: model:ir.module.module,summary:base.module_test_marketing_automation
 msgid "Test Suite for Automated Marketing Campaigns"
-msgstr "Suite de prueba para campañas de marketing automatizadas"
+msgstr "Conjunto de pruebas para las campañas de marketing automatizadas"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_data_cleaning
 msgid "Test Suite for Data Cleaning"
-msgstr "Suite de pruebas para la limpieza de datos"
+msgstr "Conjunto de pruebas para la limpieza de datos"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_discuss_full_enterprise
 msgid "Test Suite for Discuss Enterprise"
-msgstr "Suite de prueba para Conversaciones en Enterprise"
+msgstr "Conjunto de pruebas para Conversaciones en Enterprise"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_test_rental_product_configurators
@@ -38704,7 +38711,7 @@ msgstr "Jueves"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_livechat
 msgid "Ticketing, Support, Livechat"
-msgstr "Venta de entradas, asistencia y chat en vivo"
+msgstr "Venta de entradas, asistencia y chat en directo"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_helpdesk_slides
@@ -40658,7 +40665,7 @@ msgstr "Servicio de asistencia del sitio web"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_helpdesk_livechat
 msgid "Website IM Livechat Helpdesk"
-msgstr "Servicio de asistencia mediante el chat en vivo del sitio web"
+msgstr "Servicio de asistencia mediante el chat en directo del sitio web"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_jitsi
@@ -40675,7 +40682,7 @@ msgstr "Enlace del sitio web"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_livechat
 msgid "Website Live Chat"
-msgstr "Chat en vivo del sitio web"
+msgstr "Chat en directo del sitio web"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_mail
